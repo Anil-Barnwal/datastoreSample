@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package= "com.example.datastoresample";
+option java_multiple_files = true;
+
+//message UserPreferences {
+//  bool remember = 1;
+//  string username = 2;
+//  int32 luckyNumber = 3;
+//}
+
+message ProfilePreferences{
+  string userName = 1;
+  int32 age = 2;
+}
+
+message PaymentPreferences{
+  int64 paymentId = 1;
+//  string recipientName = 2;
+  string date = 2;
+}
